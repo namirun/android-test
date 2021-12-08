@@ -19,8 +19,8 @@ class MobileTestRunner extends BaseRunner {
 
     @Test
     void Runner() {
-        Results results = karateRunner(FEATURE_TEST_PATH, ignoredTags, REPORT_DIR).parallel(0);
-        List<ScenarioResult> failed = results.getScenarioResults().filter(ScenarioResult::isFailed).collect(Collectors.toList());
+        Results results = karateRunner(FEATURE_TEST_PATH, ignoredTags, REPORT_DIR).parallel(1);
+        List<ScenarioResult> failed = results.getScenarioResults().filter(sr -> sr.isFailed()).collect(Collectors.toList());
 
         if (failed.isEmpty()) {
             KARATE_LOGGER.info("No failed case found");

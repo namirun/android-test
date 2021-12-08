@@ -1,0 +1,11 @@
+{
+  "landing_page": {
+    "title": "#com.waresix.freight.transporter:id/tvTitle",
+    "dev_tool_button": "#com.waresix.freight.transporter:id/ivLogo",
+    "login_button": "#com.waresix.freight.transporter:id/tvLogin",
+    "phone_number_tab": "//android.widget.LinearLayout[@content-desc='Nomor HP']",
+    "email_tab": "//android.widget.LinearLayout[@content-desc='Email']",
+    "phone_input": "#com.waresix.freight.transporter:id/etPhoneNumber",
+    "masuk": "#com.waresix.freight.transporter:id/button"
+  }
+}

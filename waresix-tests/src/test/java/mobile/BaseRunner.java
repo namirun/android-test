@@ -17,7 +17,7 @@ public class BaseRunner {
     protected static final String KARATE_OUTPUT_PATH = "target/surefire-reports/";
     protected static final String REPORT_OUTPUT_DIRECTORY = "target";
     protected static int THREAD_COUNT = 5;
-    protected static final int MAX_RETRY = 2;
+    protected static final int MAX_RETRY = 0;
     protected static final Logger KARATE_LOGGER = new Logger();
 
     public Runner.Builder karateRunner(String[] testPath, String[] ignoredTags, String reportDirname) {

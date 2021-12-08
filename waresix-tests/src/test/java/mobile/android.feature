@@ -1,8 +1,14 @@
 Feature: android test
 
-  Background: App Preset
-    * configure driver = { type: 'android', webDriverPath : "/wd/hub", start: false, httpConfig : { readTimeout: 120000 }}
+  Background:
+    * call read 'classpath:mobile/locator.json'
 
-  Scenario: android mobile app UI tests
-    Given driver { webDriverSession: { desiredCapabilities : "#(android.desiredConfig)"} }
-    And driver.click('#com.bs.droidaction:id/showTextCheckBox')
+  Scenario: Login account
+    Given driver mobileDriver
+    And waitFor(landing_page.dev_tool_button).click()
+    And delay(1000)
+
+  Scenario: Switch environment
+    Given driver mobileDriver
+    And waitFor(landing_page.dev_tool_button).click()
+    And delay(1000)
