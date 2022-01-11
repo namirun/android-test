@@ -1,11 +1,35 @@
 {
-  "landing_page": {
-    "title": "#com.waresix.freight.transporter:id/tvTitle",
-    "dev_tool_button": "#com.waresix.freight.transporter:id/ivLogo",
-    "login_button": "#com.waresix.freight.transporter:id/tvLogin",
-    "phone_number_tab": "//android.widget.LinearLayout[@content-desc='Nomor HP']",
-    "email_tab": "//android.widget.LinearLayout[@content-desc='Email']",
-    "phone_input": "#com.waresix.freight.transporter:id/etPhoneNumber",
-    "masuk": "#com.waresix.freight.transporter:id/button"
+  "boarding": {
+    "skip_button": "#com.waresix.freight.driver:id/tvSkip",
+    "next_button": "#com.waresix.freight.driver:id/rlNextButton",
+    "start_button": "//*[@resource-id='com.waresix.freight.driver:id/button'][@text='MULAI']"
+  },
+  "debug": {
+    "select_server": "#com.waresix.freight.driver:id/spn_server",
+    "select_sit": "//*[@text='SIT']",
+    "save_button": "#com.waresix.freight.driver:id/btn_save"
+  },
+  "login": {
+    "logo_button": "#com.waresix.freight.driver:id/ivLogoLogin",
+    "phone_input": "#com.waresix.freight.driver:id/etPhoneNumber",
+    "login_button": "//*[@resource-id='com.waresix.freight.driver:id/button'][@text='MASUK']",
+    "phone_call_verify": "#com.waresix.freight.driver:id/rlPhoneContainer",
+    "message_verify": "#com.waresix.freight.driver:id/rlMessageContainer",
+    "verify_button": "//*[@resource-id='com.waresix.freight.driver:id/button'][@text='Verifikasi']"
+  },
+  "otp": {
+    "otp_input": "#com.waresix.freight.driver:id/pvOtp",
+    "confirm_button": "//*[@resource-id='com.waresix.freight.driver:id/button'][@text='KONFIRMASI']"
+  },
+  "dashboard": {
+    "profile_tab": "#com.waresix.freight.driver:id/navigation_profile"
+  },
+  "profile": {
+    "task_history": "#com.waresix.freight.driver:id/rlTaskHistory"
+  },
+  "history": {
+    "do_number": "#com.waresix.freight.driver:id/do_number_label",
+    "route": "com.waresix.freight.driver:id/route_label",
+    "customer": "com.waresix.freight.driver:id/customer_label"
   }
 }

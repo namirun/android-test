@@ -3,6 +3,7 @@ package mobile;
 import com.intuit.karate.Results;
 import com.intuit.karate.core.Scenario;
 import com.intuit.karate.core.ScenarioResult;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

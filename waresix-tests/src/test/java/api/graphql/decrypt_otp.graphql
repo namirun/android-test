@@ -1,0 +1,3 @@
+{
+    getOTPByTelp(dialCode: "<dial_code>", phone: "<phone>")
+}
