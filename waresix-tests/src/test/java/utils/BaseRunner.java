@@ -1,4 +1,4 @@
-package mobile;
+package utils;
 
 import com.intuit.karate.Logger;
 import com.intuit.karate.Runner;

@@ -1,10 +1,10 @@
-package mobile;
+package mobile.scenarios;
 
 import com.intuit.karate.Results;
 import com.intuit.karate.core.Scenario;
 import com.intuit.karate.core.ScenarioResult;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
+import utils.BaseRunner;
 
 import java.util.List;
 import java.util.stream.Collectors;
