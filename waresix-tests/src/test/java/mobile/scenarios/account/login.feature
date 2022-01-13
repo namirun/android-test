@@ -1,7 +1,7 @@
 Feature: android test
 
   Background:
-    * call read 'classpath:mobile/locator.json'
+    * call read 'classpath:mobile/pages/login/locator.json'
     * mobileDriver.webDriverSession.desiredCapabilities.avd = 'Pixel_3_API_29'
 
   Scenario: Login account
@@ -10,24 +10,24 @@ Feature: android test
     And click(boarding.next_button)
     And click(boarding.next_button)
     And click(boarding.start_button)
-#    And click(login.logo_button)
-#    And waitFor(debug.select_server)
-#    And click(debug.select_server)
-#    And click(debug.select_sit)
-#    And click(debug.save_button)
-#    And waitFor(login.phone_input)
-#    And input(login.phone_input, '81310001197')
-#    And click(login.login_button)
-#    And waitFor(login.message_verify)
-#    And click(login.message_verify)
-#    And click(login.verify_button)
-#    And waitFor(otp.otp_input)
-#    * def args = { dial_code: '+62', phone: '81310001197' }
-#    * def decryptOTP = call read('classpath:api/api.feature@decrypt_otp') args
-#    * def otpCode = decryptOTP.response.getOTPByTelp.data
-#    And input(otp.otp_input, otpCode)
-#    And click(otp.confirm_button)
-#    And waitFor(dashboard.profile_tab)
+    And click(login.logo_button)
+    And waitFor(debug.select_server)
+    And click(debug.select_server)
+    And click(debug.select_sit)
+    And click(debug.save_button)
+    And waitFor(login.phone_input)
+    And input(login.phone_input, '81310001197')
+    And click(login.login_button)
+    And waitFor(login.message_verify)
+    And click(login.message_verify)
+    And click(login.verify_button)
+    And waitFor(otp.otp_input)
+    * def args = { dial_code: '+62', phone: '81310001197' }
+    * def decryptOTP = call read('classpath:api/api.feature@decrypt_otp') args
+    * def otpCode = decryptOTP.response.getOTPByTelp.data
+    And input(otp.otp_input, otpCode)
+    And click(otp.confirm_button)
+    And waitFor(dashboard.profile_tab)
 #    And click(dashboard.profile_tab)
 #    And waitFor(profile.task_history)
 #    And click(profile.task_history)
@@ -37,10 +37,10 @@ Feature: android test
 #    And scroll(history.do_number)
 #    And delay(2000)
 
-  Scenario: Login account
-    Given driver mobileDriver
-    And waitFor(boarding.skip_button)
-    And click(boarding.next_button)
-    And click(boarding.next_button)
-    And click(boarding.start_button)
+#  Scenario: Login account
+#    Given driver mobileDriver
+#    And waitFor(boarding.skip_button)
+#    And click(boarding.next_button)
+#    And click(boarding.next_button)
+#    And click(boarding.start_button)
 
